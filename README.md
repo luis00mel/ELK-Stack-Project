@@ -145,9 +145,9 @@ For METRICBEAT:
 Download Metricbeat playbook using this command: [Asible/metricbeat-config.yml]
 
 Copy the _/etc/ansible/files/metricbeat file to /etc/metricbeat/metricbeat-playbook.yml_
--Update the filebeat-playbook.yml file to include installer
+Update the filebeat-playbook.yml file to include installer
 _curl -L -O https://artifacts.elastic.co/downloads/beats/metricbeat/metricbeat-7.6.1-amd64.deb_
--Update the metricbeat file rename to metricbeat-config.yml
+Update the metricbeat file rename to metricbeat-config.yml
 root@c1e0a059c0b0:/etc/ansible/files# nano metricbeat-config.yml
 
 output.elasticsearch:
