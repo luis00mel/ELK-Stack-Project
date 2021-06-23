@@ -122,11 +122,11 @@ For FILEBEAT:
 
 Download Filebeat playbook in : [Asible/filebeat-config.yml]
 
-Copy the _/etc/ansible/files/filebeat-config.yml' file to '/etc/filebeat/filebeat-playbook.yml_
--Update the filebeat-playbook.yml file to include installer
-_curl -L -O https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-7.6.1-amd64.deb_
--Update the filebeat-config.yml file : 
-_root@c1e0a059c0b0:/etc/ansible/files# nano filebeat-config.yml_
+Copy the /etc/ansible/files/filebeat-config.yml' file to '/etc/filebeat/filebeat-playbook.yml
+Update the filebeat-playbook.yml file to include installer
+curl -L -O https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-7.6.1-amd64.deb_
+Update the filebeat-config.yml file : 
+root@c1e0a059c0b0:/etc/ansible/files# nano filebeat-config.yml
 
 output.elasticsearch:
 
@@ -142,16 +142,11 @@ Run the playbook using this command ansible-playbook filebeat-playbook.yml and n
 
 For METRICBEAT:
 
-Download Metricbeat playbook using this command: [Asible/metricbeat-config.yml]
-
+Download Metricbeat playbook in : [Asible/metricbeat-config.yml]
 Copy the /etc/ansible/files/metricbeat file to /etc/metricbeat/metricbeat-playbook.yml
-
 Update the filebeat-playbook.yml file to include installer
-
 curl -L -O https://artifacts.elastic.co/downloads/beats/metricbeat/metricbeat-7.6.1-amd64.deb
-
 Update the metricbeat file rename to metricbeat-config.yml
-
 root@c1e0a059c0b0:/etc/ansible/files# nano metricbeat-config.yml
 
 output.elasticsearch:
@@ -166,5 +161,5 @@ setup.kibana:
  host: "10.1.0.4:5601"
 
 Run the playbook, _ansible-playbook metricbeat-playbook.yml_ and navigate to 
-_Kibana > Add Metric Data > Docker Metrics > Module Status_
+Kibana > Add Metric Data > Docker Metrics > Module Status
 to check that the installation worked as expected.
