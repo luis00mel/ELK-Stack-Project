@@ -2,7 +2,7 @@
 
 The files in this repository were used to configure the network depicted below.
 
-(Images/ElkStack.drawio)
+![alt text](https://github.com/luis00mel/ELK-Stack-Project/blob/main/Images/ElkStack.png "Elk-Stack-Typology")
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the install-elk.yml file may be used to install only certain pieces of it, such as Filebeat.
 
@@ -90,7 +90,7 @@ To download a file using curl
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-(Images/docker_ps_output.png)
+![alt text](https://github.com/luis00mel/ELK-Stack-Project/blob/main/Images/docker_ps_output.PNG "Docker_ps")
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
