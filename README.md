@@ -148,7 +148,7 @@ Copy the _/etc/ansible/files/metricbeat file to /etc/metricbeat/metricbeat-playb
 -Update the filebeat-playbook.yml file to include installer
 _curl -L -O https://artifacts.elastic.co/downloads/beats/metricbeat/metricbeat-7.6.1-amd64.deb_
 -Update the metricbeat file rename to metricbeat-config.yml
-_root@c1e0a059c0b0:/etc/ansible/files# nano metricbeat-config.yml_
+root@c1e0a059c0b0:/etc/ansible/files# nano metricbeat-config.yml
 
 output.elasticsearch:
 
