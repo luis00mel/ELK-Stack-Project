@@ -130,13 +130,13 @@ _root@c1e0a059c0b0:/etc/ansible/files# nano filebeat-config.yml_
 
 output.elasticsearch:
 
--Array of hosts to connect to.
- hosts: ["10.1.0.4:9200"]
+Array of hosts to connect to.
+hosts: ["10.1.0.4:9200"]
  username: "elastic"
  password: "changeme” 
 
--setup.kibana:
-  host: "10.1.0.4:5601"
+setup.kibana:
+ host: "10.1.0.4:5601"
 
 Run the playbook using this command ansible-playbook filebeat-playbook.yml and navigate to Kibana > Logs : Add log data > System logs > 5:Module Status > Check the data and confirm the installation.
 
