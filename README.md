@@ -90,7 +90,7 @@ To download a file using curl
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-(Images/docker_ps_output.png)
+![alt text] (https://github.com/luis00mel/ELK-Stack-Project/blob/main/Images/docker_ps_output.PNG "Docker_ps")
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
