@@ -145,14 +145,19 @@ For METRICBEAT:
 Download Metricbeat playbook using this command: [Asible/metricbeat-config.yml]
 
 Copy the /etc/ansible/files/metricbeat file to /etc/metricbeat/metricbeat-playbook.yml
+
 Update the filebeat-playbook.yml file to include installer
+
 curl -L -O https://artifacts.elastic.co/downloads/beats/metricbeat/metricbeat-7.6.1-amd64.deb
+
 Update the metricbeat file rename to metricbeat-config.yml
+
 root@c1e0a059c0b0:/etc/ansible/files# nano metricbeat-config.yml
 
 output.elasticsearch:
 
 Array of hosts to connect to.
+
 hosts: ["10.1.0.4:9200"]
  username: "elastic"
  password: "changeme"
