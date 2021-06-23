@@ -152,12 +152,12 @@ root@c1e0a059c0b0:/etc/ansible/files# nano metricbeat-config.yml
 
 output.elasticsearch:
 
--Array of hosts to connect to.
- hosts: ["10.1.0.4:9200"]
-  username: "elastic"
-  password: "changeme"
+Array of hosts to connect to.
+hosts: ["10.1.0.4:9200"]
+ username: "elastic"
+ password: "changeme"
 
--setup.kibana:
+setup.kibana:
  host: "10.1.0.4:5601"
 
 Run the playbook, _ansible-playbook metricbeat-playbook.yml_ and navigate to 
